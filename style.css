@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #181818;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navegar{
+    display: flex;
+    background-color: #181818;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 40px;
+    box-shadow: 0 0.1rem 0.5rem #00ccff;
+    width: 100%;
+    transition: all 0.5s;
+    position: fixed;
+}
+
+#logo{
+    width: 70px;
+    height: auto;
+}
+
+.navegar ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    list-style: none;
+}
+
+.navegar ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navegar ul li a:hover{
+    border-bottom: 0.5px solid  #00ccff;
+}
+
+#login{
+    cursor: pointer;
+    width: 3rem;
+    height: auto;
+}
+
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border: 3px;
+    background: #fff;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+}
+
+.computer img{
+   position: relative;
+   top: 0rem;
+   left: 0rem;
+   width: 500px;
+   height: 500px;
+}
+
+.texto{
+    max-width: 35rem;
+}
+
+.texto h4{
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.texto h1{
+    font-size: 5rem;
+    color: #00ccff;
+    margin-bottom: 1rem;
+    line-height: 3.5rem;
+}
+
+.subtext{
+    margin-bottom: 5rem;
+}
+
+.start {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+   }
+   
+.start::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #00ccff 0%, #0066ff 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+.start:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.start:hover::before {
+    width: 9em;
+   }
+
+
+.planos{
+    width: 9em;
+    height: 3em;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #00ccff;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border-radius: 30em;
+    font-size: 15px;
+    transition: .5s;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    color: #00ccff;
+    cursor: pointer;
+}
+
+.planos:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:785px){
+    .navegar{
+        padding: 18px 20px;
+    }
+    #logo{
+        width: 40px;
+        height: auto;
+    }
+    #login{
+        width: 2.5rem;
+    }
+    .menu{
+        display: block;
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background-color: #181818;
+        gap: -10px;
+        transition: .3s;
+    }
+    .nav-text{
+        margin: 16px 0 ;
+    }
+    .nav-menu.Active{
+        right: 0;
+    }
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        gap: 4rem;
+    }
+
+    .home .texto h4{
+        font-size: 15px;
+    }
+    .home .texto h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p {
+        font-size: 15px;
+    }
+    .computer img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
