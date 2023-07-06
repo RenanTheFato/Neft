@@ -8,25 +8,6 @@ function clicar(){
     nav.classList.toggle('Active')
     console.log('Menu Ativo')
 }
-var checkOpacity = true
-var btn1 = document.querySelector('.start')
-var btn2 = document.querySelector('.planos')
-var img = document.querySelector('.computer')
-
-menu.addEventListener('click', function(){
-    if (checkOpacity) {
-        btn1.style.opacity = '0'
-        btn2.style.opacity = '0'
-        img.style.opacity = '0'
-        checkOpacity = false
-    } else {
-        btn1.style.opacity = '1'
-        btn2.style.opacity = '1'
-        img.style.opacity = '1'
-        checkOpacity = true
-    }
-
-})
 
 function imageChange() {
     var picture = document.querySelector('.simbol')
@@ -50,3 +31,25 @@ window.addEventListener('resize', function () {
     imageChange()
     console.log('Redimensionou')
 })
+
+
+var checkOpacity = true
+var btn1 = document.querySelector('.start')
+var btn2 = document.querySelector('.planos')
+var img = document.querySelector('.computer')
+
+menu.addEventListener('click', function(){
+    if (checkOpacity) {
+        btn1.style.visibility = 'hidden'
+        btn2.style.visibility = 'hidden'
+        img.style.visibility = 'hidden'
+        checkOpacity = false
+    } else {
+        btn1.style.visibility = 'visible'
+        btn2.style.visibility = 'visible'
+        img.style.visibility = 'visible'
+        checkOpacity = true
+    }
+
+})
+
