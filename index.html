@@ -12,10 +12,10 @@
         <nav class="navegar">
             <a href="index.html"><img src="Img/LogoD.png" id="logo"></a>
             <ul class="nav-menu">
-                <li class="nav-text"><a href="#">Home</a></li>
-                <li class="nav-text"><a href="#">Planos</a></li>
-                <li class="nav-text"><a href="#">Sobre</a></li>
-                <li class="nav-text"><a href="#">Contato</a></li>
+                <li class="nav-text"><a href="index.html">Home</a></li>
+                <li class="nav-text" id="planos"><a href="#">Planos</a></li>
+                <li class="nav-text" id="sobre"><a href="#">Sobre</a></li>
+                <li class="nav-text" id="contato"><a href="#">Contato</a></li>
                 <a href="login.html"><img src="Img/user.png" id="login"></a>
             </ul>
             <div class="menu">
@@ -25,7 +25,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main id="main">
         <section class="home">
             <div class="texto">
                 <h4 class="txt1">Bem Vindo ao Serviço de Segurança Digital</h4>
@@ -40,7 +40,9 @@
         </section>
         </section>
     </main>
-
     <script type="text/javascript" src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="refresh.js"></script>
 </body>
 </html>
