@@ -139,7 +139,7 @@ body{
     }
 }
 
-@media (max-width: 785px){
+@media (max-width: 1225px){
     .planobox{
         flex-direction: column;
     }
@@ -150,11 +150,26 @@ body{
     .planobox .plano2{
         padding: 8px;
         width: 500px;
+    }
+    .planobox .plano3{
+        padding: 8px;
+        width: 500px;
+    }
+    .buy{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 785px){
+    .planobox .plano1{
+        width: 400px;
+    }
+    .planobox .plano2{
+        width: 400px;
         margin-top: 50px;
     }
     .planobox .plano3{
-        padding: 20px;
-        width: 500px;
+        width: 400px;
         margin-top: 50px;
     }
 }
